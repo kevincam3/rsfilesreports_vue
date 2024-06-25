@@ -1,0 +1,47 @@
+
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+.p-button-text{
+  color: #fff !important;
+}
+.p-button{
+  background-color: #3d618f
+}
+.p-button:hover{
+  background-color: #4d79b3
+}
+.p-inputtext:enabled:hover, .p-select{
+  border-color: #3d618f
+}
+.p-select-option.p-select-option-selected{
+  color: #3d618f;
+  background-color: #f0f0f0
+}
+tr.p-row-odd{
+  background-color: #4d79b342
+}
+
+.p-paginator {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.p-paginator-page.p-paginator-page-selected {
+  background-color: #e2ebf7;
+}
+
+.p-select.p-focus{
+  border-color: #3d618f;
+}
+.p-select-list{
+  padding-left: 0;
+}
