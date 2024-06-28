@@ -127,7 +127,9 @@ watch([startDate, endDate, filterType], fetchMenus);
       placeholder="Select..."
       class="p-inputtext-sm w-full text-center md:w-[200px] md:w-w-[200px]"
     />
-    <Button label="Export to Excel" icon="pi pi-file-excel" @click="exportToExcel" class="p-button-success !bg-blue-dark !text-white p-button-sm w-full md:w-auto" />
+    <Button label="Export to Excel" icon="pi pi-file-excel" @click="exportToExcel" class="p-button-success bg-[#3d618f] hover:bg-[#4d79b3] !text-white p-button-sm w-full md:w-auto" />
+    <Button label="Refresh Data" icon="pi pi-refresh" @click="fetchMenus" severity="info" raised class="bg-[#3d618f] hover:bg-[#4d79b3] !text-white p-button-sm w-full md:w-auto" />
+
   </div>
 
   <DataTable
