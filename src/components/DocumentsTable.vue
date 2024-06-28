@@ -144,6 +144,8 @@ watch([startDate, endDate, filterType], fetchDocuments);
         class="p-inputtext-sm w-[200px] md:w-w-[200px] text-center custom-select-dropdown"
       />
       <Button label="Export to Excel" icon="pi pi-file-excel" @click="exportToExcel" severity="info" raised class="bg-[#3d618f] hover:bg-[#4d79b3] !text-white p-button-sm w-full md:w-auto" />
+      <Button label="Refresh Data" icon="pi pi-refresh" @click="fetchDocuments" severity="info" raised class="bg-[#3d618f] hover:bg-[#4d79b3] !text-white p-button-sm w-full md:w-auto" />
+
     </div>
     <DataTable
       :value="documents"

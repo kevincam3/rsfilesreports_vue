@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../components/DocumentsTable.vue';
 import Categories from '../components/CategoriesTable.vue';
+import Menu from '../components/MenuTable.vue';
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/categories',
     name: 'Categories',
     component: Categories
+  },
+  {
+    path: '/menu',
+    name: 'Menu',
+    component: Menu
   },
   // Catch-all route for undefined paths, redirecting to Home
   {
