@@ -9,8 +9,8 @@
     "local-build": "pnpm run type-check & pnpm run build-only --mode=development",
     "preview": "vite preview",
     "build-only": "vite build",
-    "type-check": "vue-tsc --build --force",
-    "postbuild": "node deleteIndexFile.js"
+    "type-check": "vue-tsc --build --force"
+    
   },
   "dependencies": {
     "autoprefixer": "^10.4.19",
