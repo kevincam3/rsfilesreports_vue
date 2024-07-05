@@ -70,7 +70,7 @@ const fetchMenus = async () => {
     // Convert the response to the required format
     menus.value = data.data.map((item: any) => ({
       title: item.menu_title,
-      categories: item.file_path,
+      category: item.category,
       // country: item.country,
       total_views: item.total_views
     }));
@@ -151,7 +151,7 @@ watch([startDate, endDate, filterType], fetchMenus);
       </div>
     </template>
     <Column field="title" header="Menu Name" headerClass="bg-blue text-white"></Column>
-    <Column field="categories" header="Categories" headerClass="bg-blue text-white"></Column>
+    <Column field="category" header="Category" headerClass="bg-blue text-white"></Column>
     <!-- <Column field="country" header="Country" headerClass="bg-blue text-white"></Column> -->
     <Column field="total_views" header="Total Views" headerClass="bg-blue text-white"></Column>
 
